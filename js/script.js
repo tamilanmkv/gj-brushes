@@ -40,7 +40,9 @@
 	
 	headerStyle();
 	
-	
+	$('.click-dropdown a').on('click',function() {           
+        window.location.href = $(this).attr("data-url"); 
+});
 	
 	//Submenu Dropdown Toggle
 	if($('.main-header li.dropdown ul').length){
